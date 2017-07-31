@@ -6,6 +6,7 @@
 }
 
 /* Set padding to keep content from hitting the edges */
+/*body content is revelant for all of my pages*/
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
@@ -29,24 +30,19 @@ textarea {
     max-width: 280px;
 }
 
+/*background space on homepage, reviews, categories*/
 .jumbotron {
     background-color:black;
     width:100%;
 }
 
-.underText {
-    color:white;
-}
-
+/*button on home page*/
 #button {
     background-color:blue;
 }
 
-.col-md-4 {
-    border-bottom-color:gray;
-}
-
-.carousel-inner > .item > img {
+/*carousel on create review page*/
+.carousel-inner > .item > img { /*center my images in my carousel*/
     margin: 0 auto;
 }
 
@@ -56,5 +52,11 @@ textarea {
     left: auto;
     right: auto;
 }
+
+/*details page*/
+#details {
+    text-align:left;
+}
+
 
 

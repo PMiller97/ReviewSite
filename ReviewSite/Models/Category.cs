@@ -15,7 +15,7 @@ namespace ReviewSite
         public string Make { get; set; }
         [Display(Name ="Is it touchscreen?")]
         public bool TouchScreen { get; set; }
-        //public double ScreenSize { get; set; }
+        //public double ScreenSize { get; set; } //no longer thought this was revelant after i created my website
         [Display(Name ="Operating System")]
         public string OS { get; set; } //Operating System
 

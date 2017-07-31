@@ -9,51 +9,20 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-@*<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Category.Make)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Content)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PublishDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Stars)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Location)
-        </th>
-        <th></th>
-    </tr>
-</table>*@
 
-    <div class="row container spacing">
+@*took out table class for styling purposes*@
+
+    <div class="row container spacing" id="colBorder">
         @foreach (var item in Model)
         {
-            <div class="col-md-4">
-                @*<h4>
-                    @Html.DisplayFor(modelItem => item.Category.Make)
-                </h4>*@
-                
+            <div class="col-md-4" id="colBorder"> 
+                @*took out what I didnt want displayed on my reviews index page*@
                 <h2>
                     @Html.DisplayFor(modelItem => item.Title)
                 </h2>
                 <h4>
                     @Html.DisplayFor(modelItem => item.Content)
                 </h4>
-               
-                @*<h3>
-                    @Html.DisplayFor(modelItem => item.Stars)
-                </h3>*@
                 <h5>
                     Published by: @Html.DisplayFor(modelItem => item.Name)
                 </h5>
