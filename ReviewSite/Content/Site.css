@@ -38,3 +38,23 @@ textarea {
     color:white;
 }
 
+#button {
+    background-color:blue;
+}
+
+.col-md-4 {
+    border-bottom-color:gray;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.carousel-caption {
+    color:royalblue;
+    position: relative;
+    left: auto;
+    right: auto;
+}
+
+

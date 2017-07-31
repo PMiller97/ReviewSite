@@ -172,6 +172,10 @@
     <Compile Include="Migrations\201707281828327_AddOSProperty.Designer.cs">
       <DependentUpon>201707281828327_AddOSProperty.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707290343156_Delete.cs" />
+    <Compile Include="Migrations\201707290343156_Delete.Designer.cs">
+      <DependentUpon>201707290343156_Delete.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -207,6 +211,9 @@
     <Content Include="images\abstract bg.jpg" />
     <Content Include="images\colorful background.jpg" />
     <Content Include="images\phone.jpg_1497442182.jpg" />
+    <Content Include="images\rsz_1rsz_blackberry-curve-9370.png" />
+    <Content Include="images\rsz_iphone5.jpg" />
+    <Content Include="images\samsung-galaxy-6.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -264,6 +271,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707281828327_AddOSProperty.resx">
       <DependentUpon>201707281828327_AddOSProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707290343156_Delete.resx">
+      <DependentUpon>201707290343156_Delete.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

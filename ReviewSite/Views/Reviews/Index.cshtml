@@ -9,7 +9,7 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Category.Make)
@@ -34,36 +34,42 @@
         </th>
         <th></th>
     </tr>
+</table>*@
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Category.Make)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Content)
-        </td>
-        <td>
-            @item.PublishDate.ToShortDateString()
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Stars)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Location)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ReviewID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ReviewID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ReviewID })
-        </td>
-    </tr>
-}
+    <div class="row container spacing">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4">
+                @*<h4>
+                    @Html.DisplayFor(modelItem => item.Category.Make)
+                </h4>*@
+                
+                <h2>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </h2>
+                <h4>
+                    @Html.DisplayFor(modelItem => item.Content)
+                </h4>
+               
+                @*<h3>
+                    @Html.DisplayFor(modelItem => item.Stars)
+                </h3>*@
+                <h5>
+                    Published by: @Html.DisplayFor(modelItem => item.Name)
+                </h5>
+                <h5>
+                    @Html.DisplayFor(modelItem => item.Location)
+                </h5>
+                <h5>
+                    Publish date: @item.PublishDate.ToShortDateString()
+                </h5>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ReviewID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ReviewID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ReviewID })
+                </td>
+            </div>
+        }
+    </div>
 
-</table>
+
